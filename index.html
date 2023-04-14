@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"/>
-		<title>Lua Syntax</title>
+		<title>Lua</title>
 		<style type="text/css">
 		* {
 			padding: 0;
@@ -16,16 +16,41 @@
 </style>
 	</head>
 	<body style="background: Black;"/>
-		<h1 style="color:Blue;"/>LUA SYNTAX</h1>
-		<hr style="background:White"/>
-		<h1 style="color:Blue;"/>Developed by Tryplex on GitHub</h1>
-		<a href="https://github.com/Tryplex">Tryplex's GitHub</a><br/>
+		<h1 style="color:blue;"/>LUA DOCUMENTATION</h1>
+		<hr style="background:white"/>
 		<br></br>
-		<h2 style="color:Blue;"/>PRINT TYPES</h2>
-		<p>print()</p>
-		<p>io.write()</p>
-		<h5 style="color:Black; background:Green;"/>print("PRINTED!") -- > PRINTED!</h5>
-		<h5 style="color:Black; background:Green;"/>io.write("WRITED!") -- > WRITED!</h5>
+		<h2 style="color:blue;"/>What is Lua?</h2>
+		<p>Lua is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.</p>
+		<br></br>
+		<h2 style="color:blue;"/>What is the Lua used for?</h2>
+		<p>Lua is a scripting language used for procedural programming, functional programming, and even object-oriented programming. It uses a C-like syntax, but is dynamically typed, features automatic memory management and garbage collection, and runs by interpreting bytecode with a register-based virtual machine.</p>
+		<br></br>
+		<h2 style="color:blue;"/>Is Lua coding hard?</h2>
+		<p>Compared to other programming languages, Lua is not too difficult to learn. Many students are able to start embedding it into their applications after only a small amount of instruction. Because Lua is such a popular and relatively easy language, there are various ways for students to learn it.<p>
+		<br></br>
+		<h2 style="color:blue;"/>Is Lua written in C or C++?</h2>
+		<p>Lua is written in C. C++ was heavily inspired by C and shares a lot of similarities with C, but they are distinct. Lua is completely unrelated to C++.<p>
+		<br></br><hr style="background:white"/>
+		<br></br>
+		<h2 style="color:blue;"/>Syntax</h2>
+		<p>The first line of the embedded Lua script must precede with !lua. The script itself can span across several lines. A comparison between getting the time in seconds for the second hand of a clock in standard gauge XML and Lua XML is shown below:</p>
+		<br></br>
+		<h2 style="color:blue;"/>Standart XML Syntax</h2>
+		<p>< Value >(P:Local time,seconds)</p>
+		<p>flr 60 %< /Value ></p>
+		<br></br>
+		<h2 style="color:blue;"/>Lua XML Syntax</h2>
+		<p>< Value >!lua return</p>
+		<p>flr(varget("P:Local time", "seconds"))</p>
+		<p>% 60 < /Value ></p>
+		<br></br>
+		<p>Be aware that since the Lua code is embedded in XML escape characters are required instead of standard Lua syntax for the following characters:<p><br>
+		<p>" quotation (when inside a string definition)</p>
+		<p>' apostrophe (when inside a string definition)</p>
+		<p>< less than</p>
+		<p>> greater than</p>
+		<p>& ampersand</p>
+		<br></br><hr style="background:white"/>
 		<br></br>
 	</body>
 </html>
